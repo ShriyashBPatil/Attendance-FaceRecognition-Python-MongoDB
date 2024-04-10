@@ -1,3 +1,11 @@
+"""
+=================================================================================================
+|Github Repository - https://github.com/ShriyashBPatil/Attendance-FaceRecognition-Python-MongoDB|
+|This repository houses an innovative attendance management system developed using Python.       |
+|Leveraging the power of computer vision, DeepFace, and MongoDB, this application simplifies     |
+|the attendance tracking process with just a snap!                                               |
+=================================================================================================
+"""
 import cv2
 import time
 import tkinter as tk
