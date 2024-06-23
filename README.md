@@ -1,60 +1,100 @@
-Face Recognition Attendance System
-A real-time face recognition attendance system that logs attendance data into MongoDB.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Recognition Attendance System</h1>
+    <p><em>A real-time face recognition attendance system that logs attendance data into MongoDB.</em></p>
+    
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-Table of Contents
-Introduction
-Features
-Installation
-Usage
-License
-Contact
-Introduction
-This project implements a face recognition attendance system using a webcam to capture video input, verify faces with DeepFace, and log attendance information into a MongoDB database. The application features a graphical user interface built with Tkinter.
+    <h2 id="introduction">Introduction</h2>
+    <p>This project implements a face recognition attendance system using a webcam to capture video input, verify faces with DeepFace, and log attendance information into a MongoDB database. The application features a graphical user interface built with Tkinter.</p>
 
-Features
-Real-time face recognition using webcam input
-Verification against reference images
-Logging of attendance with timestamps in MongoDB
-Tkinter-based GUI for user interaction
-Installation
-Prerequisites
-Ensure you have the following installed:
+    <h2 id="features">Features</h2>
+    <ul>
+        <li>Real-time face recognition using webcam input</li>
+        <li>Verification against reference images</li>
+        <li>Logging of attendance with timestamps in MongoDB</li>
+        <li>Tkinter-based GUI for user interaction</li>
+    </ul>
 
-Python 3.5
-MongoDB
-CMake
-Visual Studio (with C++ build tools)
-Clone the Repository
-sh
-Copy code
-git clone https://github.com/yourusername/face-recognition-attendance-system.git
-cd face-recognition-attendance-system
-Install Dependencies
-Install the necessary Python libraries using pip:
+    <h2 id="installation">Installation</h2>
+    <h3>Prerequisites</h3>
+    <p>Ensure you have the following installed:</p>
+    <ul>
+        <li>Python 3.5</li>
+        <li>MongoDB</li>
+        <li>CMake</li>
+        <li>Visual Studio (with C++ build tools)</li>
+    </ul>
 
-sh
-Copy code
-pip install opencv-python-headless deepface pymongo pillow
-Set Up MongoDB
-Make sure MongoDB is installed and running on your local machine. The script assumes MongoDB is running on localhost with the default port 27017.
+    <h3>Clone the Repository</h3>
+    <pre><code>git clone https://github.com/yourusername/face-recognition-attendance-system.git
+cd face-recognition-attendance-system</code></pre>
 
-Prepare Reference Images
-Place the reference images in the project directory. Ensure the file paths in the reference_images dictionary within the script are correct.
+    <h3>Install Dependencies</h3>
+    <pre><code>pip install opencv-python-headless deepface pymongo pillow</code></pre>
 
-Usage
-Run the following command to start the face recognition attendance system:
+    <h3>Set Up MongoDB</h3>
+    <p>Make sure MongoDB is installed and running on your local machine. The script assumes MongoDB is running on <code>localhost</code> with the default port <code>27017</code>.</p>
 
-sh
-Copy code
-python face_recognition_attendance.py
-This will open a GUI window with the video stream from your webcam. Use the "Scan Now" button to capture and recognize faces.
+    <h3>Prepare Reference Images</h3>
+    <p>Place the reference images in the project directory. Ensure the file paths in the <code>reference_images</code> dictionary within the script are correct.</p>
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+    <h2 id="usage">Usage</h2>
+    <p>Run the following command to start the face recognition attendance system:</p>
+    <pre><code>python face_recognition_attendance.py</code></pre>
+    <p>This will open a GUI window with the video stream from your webcam. Use the "Scan Now" button to capture and recognize faces.</p>
 
-Contact
-For any questions or feedback, please reach out:
+    <h2 id="license">License</h2>
+    <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
-Email: your.email@example.com
-GitHub: yourusername
-Twitter: @yourtwitterhandle
+    <h2 id="contact">Contact</h2>
+    <p>For any questions or feedback, please reach out:</p>
+    <ul>
+        <li>Email: your.email@example.com</li>
+        <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
+        <li>Twitter: <a href="https://twitter.com/yourtwitterhandle">@yourtwitterhandle</a></li>
+    </ul>
+</body>
+</html>
