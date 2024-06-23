@@ -2,15 +2,6 @@
 
 > A real-time face recognition attendance system that logs attendance data into MongoDB.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contact](#contact)
-
 ## Introduction
 
 This project implements a face recognition attendance system using a webcam to capture video input, verify faces with DeepFace, and log attendance information into a MongoDB database. The application features a graphical user interface built with Tkinter.
@@ -23,7 +14,6 @@ This project implements a face recognition attendance system using a webcam to c
 - Tkinter-based GUI for user interaction
 
 ## Installation
-
 ### Prerequisites
 
 Ensure you have the following installed:
@@ -32,8 +22,14 @@ Ensure you have the following installed:
 - CMake
 - Visual Studio (with C++ build tools)
 
+### Install Dependencies
+
+pip install opencv-python-headless deepface pymongo pillow
+
+
 ### Clone the Repository
 
 ```sh
 git clone https://github.com/yourusername/face-recognition-attendance-system.git
 cd face-recognition-attendance-system
+
