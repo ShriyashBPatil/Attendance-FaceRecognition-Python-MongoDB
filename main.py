@@ -1,11 +1,4 @@
-"""
-=================================================================================================
-|Github Repository - https://github.com/ShriyashBPatil/Attendance-FaceRecognition-Python-MongoDB |
-|This repository houses an innovative attendance management system developed using Python.       |
-|Leveraging the power of computer vision, DeepFace, and MongoDB, this application simplifies     |
-|the attendance tracking process with just a snap!                                               |
-=================================================================================================
-"""
+
 import cv2
 import time
 import tkinter as tk
@@ -32,15 +25,15 @@ reference_images = {
    
 }
 
-# Tkinter setup
+
 root = tk.Tk()
 root.title("Face Recognition")
 
-# Canvas for displaying video stream
+
 canvas = tk.Canvas(root, width=640, height=480)
 canvas.pack()
 
-# Tkinter label to display recognition result
+
 result_label = tk.Label(root, text="", font=("Helvetica", 16))
 result_label.pack(pady=20)
 
@@ -74,7 +67,6 @@ def start_next_scan():
                 print(f"Recognized: ID={person_id}, Name={person_name}")
                 show_recognition_result(person_id, person_name)
 
-# Function to check face
 def check_face(frame):
     try:
         for person_name, info in reference_images.items():
@@ -86,7 +78,6 @@ def check_face(frame):
         print(f"Error in face verification: {e}")
         return None, None
 
-# Main loop
 def main_loop():
     ret, frame = cap.read()
 
