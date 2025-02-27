@@ -21,7 +21,7 @@ recognized_person = None
 recognition_timeout = 180  
 
 reference_images = {
-    "Shriyash": {"id": 1, "image": cv2.imread("img.jpg"),"class":"SY CS B"},
+    "Shriyash": {"id": 1, "image": cv2.imread("./WIN_20250227_14_37_30_Pro.jpg"),"class":"SY CS B"},
    
 }
 
@@ -66,6 +66,8 @@ def start_next_scan():
                 recognized_person = {"id": person_id, "name": person_name}
                 print(f"Recognized: ID={person_id}, Name={person_name}")
                 show_recognition_result(person_id, person_name)
+            else:
+                print("Not")
 
 def check_face(frame):
     try:
